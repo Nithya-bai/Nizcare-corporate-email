@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizcare - India's Leading Health and Wellness Destination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .header {
+            background: linear-gradient(to right, #22a89d, #5acecb);
+            padding: 20px;
+            color: white;
+            text-align: left;
+            
+           
+        }
+        .logo {
+            height: 10px;
+            margin-bottom: 10px;
+         }
+        .main-banner {
+            background: linear-gradient(to right, #22a89d, #5acecb);
+            color: #000;
+            padding: 20px;
+            text-align: left;
+        }
+        .main-banner h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 5px 0;
+            line-height: 1.2;
+        }
+        .hotel-highlight {
+            color: #f4a742;
+            font-weight: bold;
+        }
+        .transform-section {
+            text-align: center;
+            padding: 15px 0;
+            color: #000080;
+        }
+        .transform-section h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .packages {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            padding: 10px 15px;
+        }
+        .packages-row2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 10px 15px;
+        }
+        .package {
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        
+        }
+        .package-teal {
+            background-color: #22a89d;
+        }
+        .package-yellow {
+            background-color: #f4a742;
+        }
+        .package h3 {
+            font-size: 18px;
+            margin-top: 0;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .package p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .services-section {
+            text-align: center;
+            padding: 15px;
+
+        }
+        .services-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #000080;
+            text-align: center;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            text-align: center;
+            padding: 0 15px;
+        }
+        .service {
+            padding: 10px;
+        }
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 10px;
+        }
+        .service h4 {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .service p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        
+        .discounted-section {
+            text-align: center;
+            padding: 15px;
+
+        }
+
+       .discounted-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #000080;
+            text-align: center;
+        }
+
+       .discounted-row {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 15px;
+       padding: 0 15px 15px;
+       max-width: 500px;
+       margin: 0 auto;
+      }
+
+
+      .discounted-row-three {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 500px;
+     }
+
+     .discounted-service {
+     background-color: #f2f2f2;
+     padding: 15px;
+     border-radius: 10px;
+     text-align: center;
+     }
+
+    .discounted-orange {
+    background-color: #f4a742;
+    color: white;
+    }
+
+    .discounted-service-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 10px;
+    font-size: 24px;
+   }
+
+    .discounted-service h4 {
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: bold;
+    }
+
+    .discounted-service p {
+    font-size: 12px;
+    margin: 5px 0;
+    }
+    .contact-button {
+    text-align: center;
+    padding: 15px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .cta-button {
+      background: darkblue;
+      color: white;
+      padding: 8px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .contact-info {
+    background-color: #22a89d;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    }
+    .contact-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    }
+   .contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    }
+    .clients-section{
+    color: #000080;
+    text-align: center;
+    }
+    .clients img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    }
+    
+    .section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .logo {
+      max-width: 500px;
+      width: 100%;
+      margin-bottom: 1rem;
+      height: auto;
+    }
+
+    .footer1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000080;
+    text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo -->
+        <div class="header">
+            <img src="asset/nizcare-logo.png" alt="Nizcare Logo" width="200px">
+            <span style="color:white"></span>
+        </div>
+
+        <!-- Main Banner -->
+        <div class="main-banner">
+            <h1>INDIA'S LEADING<br>HEALTH AND<br>WELLNESS<br>DESTINATION FOR</h1>
+            <h1 class="hotel-highlight">HOTEL INDUSTRY</h1>
+            <p>HOTEL INDUSTRY-SPECIFIC PACKAGES</p>
+        </div>
+
+        <!-- Transform Section -->
+        <div class="transform-section">
+            <h2>TRANSFORM EMPLOYEE WELLNESS<br>WITH HEALTH CHECKUP</h2>
+        </div>
+
+        <!-- Packages Row 1 -->
+        <div class="packages">
+            <!-- Package 1 -->
+            <div class="package package-teal">
+                <h3>PACKAGE 1</h3>
+                <p>Physical Examination</p>
+                <p>Blood prressure check-up</p>
+                <p>Blood glucose test</p>
+                <p>Complete blood count</p>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package package-yellow">
+                <h3>PACKAGE 2</h3>
+                <p>Plus liver function Test</p>
+                <p>Kidney function Test</p>
+                <p>Lipid Profile</p>
+                
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package package-teal">
+                <h3>PACKAGE 3</h3>
+                <p>Plus chest X-ray</p>
+                <p>Electrocardiogram</p>
+                <p>Ultrasound abdomen</p>
+                
+            </div>
+        </div>
+
+        <!-- Packages Row 2 -->
+        <div class="packages-row2">
+            <!-- Package 4 -->
+            <div class="package package-teal">
+                <h3>PACKAGE 4</h3>
+                <p>Plus MRI scan</p>
+                <p>CT scan</p>
+                <p>Cancer screening</p>
+                <p>Mammography</p>
+                <p>Pap smear</p>
+               
+            </div>
+
+            <!-- Package 5 -->
+            <div class="package package-teal">
+                <h3>PACKAGE 5</h3>
+                <p>Plus nutrition counselling</p>
+                <p>Stress Management</p>
+                <p>Fitness Assessment</p>
+              
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services-section">
+            <h3>And Explore More with Nizcare Services</h3>
+      
+                
+        <div class="section">
+            <img src="https://nithya-bai.github.io/Images/assets/7logo.png"  alt="24/7 Logo" class="logo" />
+          </div>
+           
+            
+                <!-- First Row: 4 boxes -->
+             <div class="discounted-section">
+    <h3>Discounted Services</h3>
+
+    <!-- First Row: 4 boxes -->
+    <div class="discounted-row">
+        <div class="discounted-service">
+            <div class="discounted-service-icon">👨‍⚕️</div>
+            <h4>24/7 Online<br>Doctor<br>Consultation</h4>
+            <p>Any Time Any where</p>
+        </div>
+
+        <div class="discounted-service discounted-orange">
+            <div class="discounted-service-icon">🩺</div>
+            <h4>Annual Health<br>Checkups</h4>
+            <p>Starting at just ₹450 for<br>50-vital parameters</p>
+        </div>
+
+        <div class="discounted-service">
+            <div class="discounted-service-icon">🩹</div>
+            <h4>Chronic Care<br>Management</h4>
+            <p>Diabetes, Hypertension<br>& More at ₹1990/year</p>
+        </div>
+
+        <div class="discounted-service discounted-orange">
+            <div class="discounted-service-icon">🏥</div>
+            <h4>Occupational<br>Health Center (OHC)</h4>
+            <p>Onsite medical support<br>for healthy & productive<br>workforce</p>
+        </div>
+    </div>
+
+    <!-- Second Row: 3 boxes -->
+    <div class="discounted-row discounted-row-three">
+        <div class="discounted-service discounted-orange">
+            <div class="discounted-service-icon">🧠</div>
+            <h4>Mental Wellness<br>Support</h4>
+            <p>Stress-free Employees,<br>Productive Workspaces</p>
+        </div>
+
+        <div class="discounted-service">
+            <div class="discounted-service-icon">🧪</div>
+            <h4>Discounted Lab<br>Tests, Medicines<br>& Fitness Plans</h4>
+            <p>Save More, Stay Healthy!</p>
+        </div>
+
+        <div class="discounted-service discounted-orange">
+            <div class="discounted-service-icon">📊</div>
+            <h4>Dedicated Corporate<br>Wellness Dashboard<br>& Reports</h4>
+            <p>Seamless Dashboards<br>and Apps</p>
+        </div>
+    </div>
+</div>
+
+              
+
+        <!-- Contact Button -->
+        <div class="contact-button">
+            <footer>
+                <a href=https://wa.me/9150036313?text=Hi%20I%20am%20from%20bank%20sector%20want%20to%20know%20more class="cta-button">Contact</a>
+            </footer>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <a href="tel:+919789537313" class="contact-item">
+                <span class="contact-icon">📞</span> +91 97895 37313
+            </a>
+            <a href="mailto:corporate@nizcare.com" class="contact-item">
+                <span class="contact-icon">✉️</span> corporate@nizcare.com
+            </a>
+            <a href="https://www.nizcare.com" class="contact-item">
+                <span class="contact-icon">🌐</span> www.nizcare.com
+            </a>
+        </div>
+
+        <!-- Clients Section -->
+        <div class="clients-section">
+            <h3>Our Clients</h3>
+            <div class="clients">
+                <img src="https://nithya-bai.github.io/Images/assets/clients.jpeg"  alt="Client logo" />
+              </div>
+        </div>
+  
+
+        <!-- Footer -->
+        <div class="footer1">
+            <p>Healthier Employees, Happier Workplaces!</p>
+        </div>
+    </div>
+</body>
+</html>
