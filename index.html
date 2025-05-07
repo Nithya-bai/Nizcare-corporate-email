@@ -3,10 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HEALTH AND WELLNESS</title>
+  <style>
+   body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .center-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Max 4 buttons per row */
+      gap: 15px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .button-container {
+        grid-template-columns: repeat(2, 1fr); /* Fewer columns on small screens */
+      }
+    }
+
+  </style>
 </head>
 <body>
-  <a href="./Corporate-mail.html">Corporate-mail</a>
-  <a href="./Hotel.html">Hotel-Industry</a>
+  <div class="center-container">
+    <div class="button-container">
+  <a href="./Corporate-mail.html" class="btn">Corporate-mail</a><br>
+  <a href="./Hotel.html" class="btn">Hotel-Industry</a><br>
+  <a href="./Food.html" class="btn">Food-Industry</a><br>
+  <a href="./Textile.html" class="btn">Textiles-Industry</a><br>
+  <a href="./Mining.html" class="btn">Mining-Industry</a><br>
+  <a href="./Cement .html" class="btn">Cement-Industry</a><br>
+  <a href="./Steel.html" class="btn">Steel-Industry</a><br>
+  <a href="./Leather.html" class="btn">Leather-Industry</a><br>
+  <a href="./IT industries.html" class="btn">IT-Industry</a><br>
+  <a href="./Heavy.html" class="btn">Heavy-Industry</a><br>
+  <a href="./Cottage.html" class="btn">Cottage-Industry</a><br>
+  <a href="./Chemical.html" class="btn">Chemical-Industry</a><br>
+  <a href="./Banking.html" class="btn">Banking-Industrt</a><br>
+  <a href="./Automobile.html" class="btn">Automobile-Industry</a><br>
+  <a href="./ITES.html" class="btn">ITES-Industry</a><br>
+  <a href="./Airlines.html" class="btn">Airlines-Industry</a><br>
+  <a href="./Fertilizer.html" class="btn">Fertilizer-Industry</a><br>
+</div>
+</div>
 </body>
 </html>
